@@ -1,0 +1,10 @@
+D:\2021\study\15_BasementWall\BasementWall\BasementWall\bin\BasementWall.dll
+D:\2021\study\15_BasementWall\BasementWall\BasementWall\bin\BasementWall.pdb
+D:\2021\study\15_BasementWall\BasementWall\BasementWall\obj\Debug\BasementWall.csprojAssemblyReference.cache
+D:\2021\study\15_BasementWall\BasementWall\BasementWall\obj\Debug\BasementWall.csproj.CoreCompileInputs.cache
+D:\2021\study\15_BasementWall\BasementWall\BasementWall\obj\Debug\BasementWall.dll
+D:\2021\study\15_BasementWall\BasementWall\BasementWall\obj\Debug\BasementWall.pdb
+D:\2021\study\15_BasementWall\BasementWall\BasementWall\bin\cgiSolverBlazeCli.dll
+D:\2021\study\15_BasementWall\BasementWall\BasementWall\obj\Debug\BasementWall.csproj.CopyComplete
+D:\2021\study\15_BasementWall\BasementWall\BasementWall\obj\Debug\BasementWall.Form1.resources
+D:\2021\study\15_BasementWall\BasementWall\BasementWall\obj\Debug\BasementWall.csproj.GenerateResource.cache
