@@ -25,11 +25,11 @@ namespace BasementWall
         /// Subcategory the panel. If you use non-existing tab or panel names, 
         /// new tabs/panels will automatically be created.
         /// </summary>
-        internal RebarClass rebarClass { get; set; }
-        internal ConcreteClass concreteClass { get; set; }
-        internal double rebarRation { get; set; }
-        internal double concreteThickness { get; set; }
-        internal double crack { get; set; }
+        internal RebarClass rebarClass = RebarClass.HRB400;
+        internal ConcreteClass concreteClass = ConcreteClass.C40;
+        internal double rebarRation = 0.2;
+        internal double concreteThickness = 15;
+        internal double crack = 0.3;
         public BasementWallComponent()
           : base("BasementWall", "BW",
               "Basement wall caculation",
@@ -76,7 +76,13 @@ namespace BasementWall
             wall.Wall = wallSurface;
             wall.Offset = offset;
             wall.Thickness = thickness;
+            wall.concreteClass = this.concreteClass;
+            wall.rebarClass = this.rebarClass;
+            wall.crack = this.crack;
+            wall.concreteThickness = this.concreteThickness;
+            wall.rebarRation = this.rebarRation;
             List<Brep> wallItem = wall.CreateWallBrep();
+            
             DA.SetDataList(0,wallItem);
             DA.SetData(1, wall);
             
@@ -118,10 +124,17 @@ namespace BasementWall
         { }
         public override GH_ObjectResponse RespondToMouseDoubleClick(GH_Canvas sender, GH_CanvasMouseEvent e)
         {
-            Form1 form = new Form1(this.Owner);
-            form.Show();
-            
-            return GH_ObjectResponse.Capture;
+            if (IsMenuRegion(e.CanvasLocation))
+            {
+                WallProp form = new WallProp(this.Owner);
+                form.Show();
+
+                return GH_ObjectResponse.Handled;
+            }
+            else
+            {
+                return GH_ObjectResponse.Ignore;
+            }
         }
     }
 }

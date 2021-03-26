@@ -6,5 +6,6 @@ D:\2021\study\15_BasementWall\BasementWall\BasementWall\obj\Debug\BasementWall.d
 D:\2021\study\15_BasementWall\BasementWall\BasementWall\obj\Debug\BasementWall.pdb
 D:\2021\study\15_BasementWall\BasementWall\BasementWall\bin\cgiSolverBlazeCli.dll
 D:\2021\study\15_BasementWall\BasementWall\BasementWall\obj\Debug\BasementWall.csproj.CopyComplete
-D:\2021\study\15_BasementWall\BasementWall\BasementWall\obj\Debug\BasementWall.Form1.resources
 D:\2021\study\15_BasementWall\BasementWall\BasementWall\obj\Debug\BasementWall.csproj.GenerateResource.cache
+D:\2021\study\15_BasementWall\BasementWall\BasementWall\obj\Debug\BasementWall.Parameters.resources
+D:\2021\study\15_BasementWall\BasementWall\BasementWall\obj\Debug\BasementWall.WallProp.resources

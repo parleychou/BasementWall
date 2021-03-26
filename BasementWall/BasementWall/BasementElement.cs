@@ -32,7 +32,11 @@ namespace BasementWall
             get { return offset; }
             set { offset = value; }
         }
-
+        internal RebarClass rebarClass { get; set; }
+        internal ConcreteClass concreteClass { get; set; }
+        internal double rebarRation { get; set; }
+        internal double concreteThickness { get; set; }
+        internal double crack { get; set; }
         public List<Brep> CreateWallBrep()
         {
             double offsetDistance1 = this.thickness / 2 + offset;
@@ -109,9 +113,24 @@ namespace BasementWall
     }
     public class BasementModel : BasementElement
     {
-        List<Solid> solids;
-        List<Slab> slabs;
-        List<BasementWall> walls;
+        public double solidGravity { get; set; }
+        public double waterGravity { get; set; }
+        public double solidWaterGravity  { get; set; }
+        public double deadLoad { get; set; }
+        public double liveLoad { get; set; }
+        public double deadLoadParam { get; set; }
+        public double liveLoadParam { get; set; }
+        public double solidParam { get; set; }
+        public BasementModel()
+        {
+            solids = new List<Solid>();
+            slabs = new List<Slab>();
+            walls = new List<BasementWall>();
+        }
+
+        public List<Solid> solids;
+        public List<Slab> slabs;
+        public List<BasementWall> walls;
     }
     enum ConcreteClass { C25,C30,C35,C40,C45,C50,C55,C60}
     enum RebarClass {HPB300,HRB335,HRB400}

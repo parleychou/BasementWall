@@ -1,7 +1,7 @@
 ﻿
 namespace BasementWall
 {
-    partial class Form1
+    partial class WallProp
     {
         /// <summary>
         /// Required designer variable.
@@ -37,7 +37,7 @@ namespace BasementWall
             this.rebarClass = new System.Windows.Forms.ComboBox();
             this.cancle = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.crack = new System.Windows.Forms.TextBox();
             this.confirm = new System.Windows.Forms.Button();
             this.rebarRataion = new System.Windows.Forms.Label();
             this.minRebarRation = new System.Windows.Forms.TextBox();
@@ -70,6 +70,7 @@ namespace BasementWall
             this.concreteClassValue.Size = new System.Drawing.Size(120, 20);
             this.concreteClassValue.TabIndex = 2;
             this.concreteClassValue.Tag = "";
+            this.concreteClassValue.Text = "C40";
             this.concreteClassValue.ValueMember = "3";
             // 
             // concreteThickness
@@ -77,9 +78,9 @@ namespace BasementWall
             this.concreteThickness.AutoSize = true;
             this.concreteThickness.Location = new System.Drawing.Point(15, 45);
             this.concreteThickness.Name = "concreteThickness";
-            this.concreteThickness.Size = new System.Drawing.Size(107, 12);
+            this.concreteThickness.Size = new System.Drawing.Size(119, 12);
             this.concreteThickness.TabIndex = 3;
-            this.concreteThickness.Text = "       保护层厚度";
+            this.concreteThickness.Text = "   保护层厚度（mm）";
             // 
             // concreteThicknessValue
             // 
@@ -94,9 +95,9 @@ namespace BasementWall
             this.rebar.AutoSize = true;
             this.rebar.Location = new System.Drawing.Point(15, 75);
             this.rebar.Name = "rebar";
-            this.rebar.Size = new System.Drawing.Size(101, 12);
+            this.rebar.Size = new System.Drawing.Size(107, 12);
             this.rebar.TabIndex = 6;
-            this.rebar.Text = "        钢筋等级";
+            this.rebar.Text = "         钢筋等级";
             // 
             // rebarClass
             // 
@@ -111,6 +112,7 @@ namespace BasementWall
             this.rebarClass.Name = "rebarClass";
             this.rebarClass.Size = new System.Drawing.Size(120, 20);
             this.rebarClass.TabIndex = 7;
+            this.rebarClass.Text = "HRB400";
             // 
             // cancle
             // 
@@ -131,13 +133,13 @@ namespace BasementWall
             this.label1.TabIndex = 9;
             this.label1.Text = "裂缝宽度限值（mm）";
             // 
-            // textBox1
+            // crack
             // 
-            this.textBox1.Location = new System.Drawing.Point(130, 100);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(121, 21);
-            this.textBox1.TabIndex = 10;
-            this.textBox1.Text = "0.3";
+            this.crack.Location = new System.Drawing.Point(130, 100);
+            this.crack.Name = "crack";
+            this.crack.Size = new System.Drawing.Size(121, 21);
+            this.crack.TabIndex = 10;
+            this.crack.Text = "0.3";
             // 
             // confirm
             // 
@@ -174,7 +176,7 @@ namespace BasementWall
             this.Controls.Add(this.minRebarRation);
             this.Controls.Add(this.rebarRataion);
             this.Controls.Add(this.confirm);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.crack);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.cancle);
             this.Controls.Add(this.rebarClass);
@@ -199,7 +201,7 @@ namespace BasementWall
         private System.Windows.Forms.ComboBox rebarClass;
         private System.Windows.Forms.Button cancle;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox crack;
         private System.Windows.Forms.Button confirm;
         private System.Windows.Forms.Label rebarRataion;
         private System.Windows.Forms.TextBox minRebarRation;
